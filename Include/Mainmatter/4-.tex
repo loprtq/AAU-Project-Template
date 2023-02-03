@@ -1,0 +1,45 @@
+\chapter{}\label{Ch.4}
+This chapter is based upon \citep{}, unless stated otherwise.
+
+\begin{defn}[Title]\label{D}
+    Text
+\end{defn}
+\begin{thm}[Title]\label{T}
+    Text
+\end{thm}
+\begin{prop}[Title]\label{P}
+    Text
+\end{prop}
+\begin{coro}[Title]\label{C}
+    Text
+\end{coro}
+\begin{exmp}[Title]\label{E}
+    Text
+\end{exmp}
+\begin{exmp}\label{E1}
+    Text
+\end{exmp}
+
+\begin{lstlisting}[caption={Text}, style=CustomR, label={L}]
+@µ@, @\$@
+\end{lstlisting}
+\lstinputlisting[
+  firstline=1, lastline=2,
+  label={Code:Diebold}, style=CustomR,
+  basicstyle=\footnotesize\ttfamily,
+  caption={Comparing different models forecasting accuracy.},
+]{Code/Listings/Test.R}
+
+\begin{proof}
+\end{proof}
+
+
+
+\section{Autoref}
+\autoref{D}, \autoref{T}, \autoref{P}, \autoref{L}, \autoref{C}, \autoref{E}
+
+\section{Test}
+\begin{defn}
+    \blindtext
+\end{defn}
+\blindtext[10]

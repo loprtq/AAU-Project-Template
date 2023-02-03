@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper,twoside,openright,english]{book}
+% See https://tex.stackexchange.com/a/36989/118167
+
+\def \projecttitle       {Title}
+\def \projectsubtitle    {Subtitle}
+\def \projecttheme       {Theme}
+\def \projectdegree      {Mathematics-Economics}
+\def \projectperiod      {Spring Semester of 2023}
+\def \projectnumber      {P}
+\def \projectgroup       {-}
+\def \projectauthors     {
+  Group member 1\\
+  Group member 2\\
+  Group member 3\\
+  Group member 4\\
+  Group member 5\\
+  Group member 6
+}
+\def \projectsupervisors {
+  Supervisor
+}
+
+\usepackage{aaumath}
+\begin{document}
+% --------------------------------------------------------------------------------
+\frontmatter
+ \include{Include/Frontmatter/Frontpage}
+ \include{Include/Frontmatter/Titlepage}
+ \include{Include/Frontmatter/Preface}
+ \include{Include/Frontmatter/Nomenclature}
+ \include{Include/Frontmatter/Contents}
+
+% --------------------------------------------------------------------------------
+\mainmatter
+% Introduction
+ \include{Include/Mainmatter/1-Introduction}
+
+% 
+ \include{Include/Mainmatter/2-}
+ 
+% 
+ \include{Include/Mainmatter/3-}
+
+% 
+ \include{Include/Mainmatter/4-}
+ 
+% Concluding element
+ \include{Include/Mainmatter/Discussion}
+ \include{Include/Mainmatter/Conclusion}
+
+% --------------------------------------------------------------------------------
+\begin{appendices}
+ \include{Include/Appendices/Appendix-A}
+%  \include{Include/Appendices/Appendix-B}
+\end{appendices}
+
+% --------------------------------------------------------------------------------
+\backmatter
+ \bibliographystyle{apalike}
+ \bibliography{
+  Bibliography/Books,
+  Bibliography/Std-books,
+  Bibliography/Articles,
+  Bibliography/Software
+ }
+ \include{Include/Frontmatter/Endpage}
+\end{document}
